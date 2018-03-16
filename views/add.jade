@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  form(action="/books/addBook", method="post")
+    label(for="name") Name
+    input#name(type="text", name="name")
+    label(for="author") Author
+    input#author(type="text", name="author")
+    button(type="submit") Submit

@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    p Welcome to BookStore
+    div.parent(style="width:500px")
+      div.left(style="float:left;width:100px")
+        ul
+          li
+            a(href='/') Home
+          li
+            a(href='/books/all') Books
+      div.right(style="float:right;width:400px")
+        block content
